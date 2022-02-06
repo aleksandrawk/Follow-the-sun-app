@@ -22,7 +22,11 @@ console.log (currentTime);
 function showTemp(response) {
     document.querySelector("h1").innerHTML = response.data.name;
     document.querySelector("#temperature").innerHTML = Math.round(response.data.main.temp);
+    document.querySelector("#description").innerHTML = response.data.weather[0].description;
+    document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+    document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
 }
+
 
   function searchCity(city) {
     let apiKey = "e8ae444df35b49d6068af39524f98513";
@@ -38,7 +42,9 @@ function showTemp(response) {
     console.log(cityInput.value);
   }
   
+
 let form = document.querySelector("form");
 form.addEventListener("submit", submitCity);
+
 
   
