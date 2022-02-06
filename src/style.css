@@ -4,10 +4,21 @@ body {
   }
   h1 {
     color: #7c7c7c;
-    font-size: 24px;
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 28px;
+    padding-bottom: 10px;
+    margin: 0;
+  }
+  h5{
+    color: #7c7c7c;
+    padding: 10px;
+    font-size: 16px;
     font-weight: 100;
     line-height: 28px;
     margin: 0;
+    text-align: center;
+
   }
   ul {
     margin: 0 0 10px;
@@ -30,16 +41,20 @@ body {
     max-width: 900px;
     background: #ffff;
   }
+  .details-value {
+      color: black;
+      font-style: italic;
+  }
   
   .weather-icon {
-    height: 64px;
-    width: 64px;
+    height: 94px;
+    width: 94px;
     margin-right: 10px;
   }
   .temperature {
     font-weight: 400;
     font-size: 64px;
-    line-height: 1;
+
   }
   .units {
     position: fixed;
@@ -53,5 +68,23 @@ body {
     font-size: 14px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
+    text-align: center;
+  }
+
+  .forecast-emoji{
+    font-size: 40px;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    position:relative;
+  }
+
+  .list-group-item{
+    color: #7c7c7c;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 28px;
+    margin: 0;
     text-align: center;
   }
