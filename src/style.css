@@ -44,18 +44,23 @@ body {
     background: #ffff;
   }
   .details-value {
-      color: black;
-      font-style: italic;
+    color: black;
+    font-style: italic;
   }
   
+  .overview{
+    margin-bottom: 20px;
+  }
   .weather-icon {
     height: 94px;
     width: 94px;
     margin-right: 10px;
+    line-height: 1;
   }
   .temperature {
     font-weight: 400;
     font-size: 64px;
+    line-height: 1;
 
   }
   .units {
