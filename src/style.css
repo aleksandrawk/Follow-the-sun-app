@@ -38,6 +38,11 @@ body {
     text-transform: capitalize;
   }
 
+  a:link {
+    text-decoration: none;
+  }
+  
+
   .weather-app {
     border: 1px solid #dadde1;
     padding: 15px;
