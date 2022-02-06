@@ -39,9 +39,9 @@ body {
   }
 
   a:link {
-    text-decoration: none;
-  }
-  
+  text-decoration: none;
+}
+
 
   .weather-app {
     border: 1px solid #dadde1;
