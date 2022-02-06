@@ -1,7 +1,13 @@
 let now = new Date();
 let hours = now.getHours();
+if (hours < 10){
+    hours = `0${hours}`;
+}
 let minutes = now.getMinutes();
-console.log (minutes);
+if (minutes < 10){
+    munites = `0${minutes}`;
+}
+
 
 let days = [
   "Sunday",
