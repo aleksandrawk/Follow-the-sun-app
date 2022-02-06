@@ -56,12 +56,16 @@ function showTemp(response) {
 function showTempFarenheit (event){
     event.preventDefault ();
     let temperatureElement = document.querySelector ("#temperature");
+    cLink.classList.remove ("active");
+    fLink.classList.add ("active");
     let farenheitTemp = (celsiusTemp * 9) / 5 + 32;
     temperatureElement.innerHTML = Math.round (farenheitTemp)
 }
 
 function showTempCelsius (event){
     event.preventDefault ();
+    cLink.classList.add ("active");
+    fLink.classList.remove ("active");
     let temperatureElement = document.querySelector ("#temperature");
     temperatureElement.innerHTML = Math.round (celsiusTemp)
 }
