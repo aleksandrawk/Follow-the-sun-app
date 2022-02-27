@@ -33,9 +33,10 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
+    }
+ 
   li :first-letter{
-    text-transform: capitalize;
+  text-transform: capitalize;
   }
 
   a:link {
@@ -43,7 +44,7 @@ body {
 }
 
 
-  .weather-app {
+.weather-app {
     border: 1px solid #dadde1;
     padding: 15px;
     margin: 20px auto;
@@ -130,6 +131,6 @@ body {
     opacity: 0.5;
   }
   
-  .weather-forecast-temperatures {
-    font-size: 13px;
-  }
+.weather-forecast-temperatures {
+font-size: 13px;
+}

@@ -101,14 +101,6 @@ getForecast(response.data.coord);
     console.log(cityInput.value);
   }
   
-function showTempFarenheit (event){
-    event.preventDefault ();
-    let temperatureElement = document.querySelector ("#temperature");
-    cLink.classList.remove ("active");
-    fLink.classList.add ("active");
-    let farenheitTemp = (celsiusTemp * 9) / 5 + 32;
-    temperatureElement.innerHTML = Math.round (farenheitTemp)
-}
 
 function showTempCelsius (event){
     event.preventDefault ();
@@ -120,13 +112,5 @@ function showTempCelsius (event){
 
 let celsiusTemp = null;
 
-
 let form = document.querySelector("form");
 form.addEventListener("submit", submitCity);
-
-
-let fLink = document.querySelector ("#f-link");
-fLink.addEventListener ("click", showTempFarenheit);
-
-let cLink = document.querySelector ("#c-link");
-cLink.addEventListener ("click", showTempCelsius);
