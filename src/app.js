@@ -99,7 +99,6 @@ function showTempCelsius (event){
     temperatureElement.innerHTML = Math.round (celsiusTemp)
 }
 
-
 let celsiusTemp = null;
 
 
@@ -113,3 +112,4 @@ fLink.addEventListener ("click", showTempFarenheit);
 let cLink = document.querySelector ("#c-link");
 cLink.addEventListener ("click", showTempCelsius);
 
+displayForecast();
