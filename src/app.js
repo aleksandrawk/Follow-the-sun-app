@@ -47,12 +47,11 @@ function displayForecast() {
           <span class="weather-forecast-temperature-min"> 1° </span>
         </div>
       </div>
-  ;`
+  `
   });
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
-
 
 function showTemp(response) {
     document.querySelector("h1").innerHTML = response.data.name;
