@@ -25,6 +25,35 @@ currentTime.innerHTML = `${day} ${hours}:${minutes}`;
 console.log (currentTime);
 
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+      <div class="col-2">
+        <div class="weather-forecast-date">${day}</div>
+        <img
+          src="http://openweathermap.org/img/wn/50d@2x.png"
+          alt=""
+          width="42"
+        />
+        <div class="weather-forecast-temperatures">
+          <span class="weather-forecast-temperature-max"> 10° </span>
+          <span class="weather-forecast-temperature-min"> 1° </span>
+        </div>
+      </div>
+  ;`
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
+
 function showTemp(response) {
     document.querySelector("h1").innerHTML = response.data.name;
     celsiusTemp = response.data.main.temp;
@@ -83,6 +112,4 @@ fLink.addEventListener ("click", showTempFarenheit);
 
 let cLink = document.querySelector ("#c-link");
 cLink.addEventListener ("click", showTempCelsius);
-
-
 
