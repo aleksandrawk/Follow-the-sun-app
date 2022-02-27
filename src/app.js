@@ -20,7 +20,7 @@ let days = [
 ];
 let day = days[now.getDay()];
 
-let currentTime = document.querySelector("li");
+let currentTime = document.querySelector("#time");
 currentTime.innerHTML = `${day} ${hours}:${minutes}`;
 console.log (currentTime);
 
